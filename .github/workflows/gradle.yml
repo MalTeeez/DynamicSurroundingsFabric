@@ -2,8 +2,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    tags:
-      - '*'
+    branches: [ "1.19.3" ]
+  pull_request:
+    branches: [ "1.19.3" ]
 
 jobs:
   build:
